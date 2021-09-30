@@ -3,6 +3,7 @@
 - Latest Intellij IDEA
 - Chrome 94 driver is bundled
 - execute "./gradlew test" command
+- After cloning, open cucumber folder in intellij
 
 # CI - CD
 - clone repo
