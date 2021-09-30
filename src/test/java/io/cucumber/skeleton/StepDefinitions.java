@@ -4,7 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.pages.*;
+import io.cucumber.skeleton.pages.*;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 

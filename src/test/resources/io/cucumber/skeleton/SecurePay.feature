@@ -1,5 +1,6 @@
 Feature: Secure Pay
 
+  @smoke
   Scenario: Secure Pay
     Given I am on Google Home page
     When I search for SecurePay

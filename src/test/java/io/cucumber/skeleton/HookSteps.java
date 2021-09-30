@@ -17,14 +17,17 @@ public class HookSteps {
         this.context = context;
     }
 
+    //open browser before each scenario
     @Before
     public void startBrowser(){
         System.setProperty("webdriver.chrome.driver",
                 "target/test-classes/chromedriver94");
+        //driver = new RemoteWebDriver(new url(""))
         context.driver = new ChromeDriver();
         context.driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
     }
 
+    //close browser after scenario
     @After
     public void closeBrowser(){
         WebDriver driver = context.driver;
