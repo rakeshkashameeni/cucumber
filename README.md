@@ -1,13 +1,31 @@
+# Used Mac operating system
+# Build tool Gradle
+# intellij idea community edition (IDE) open-source
+# Install Software open-source 
+# JDK 11
+
 # How to run test
 - JDK 11
 - Latest Intellij IDEA
 - execute "./gradlew test" command
 - After cloning, open cucumber folder in intellij
 
+# How to View Report
+View go to this directory
+target/cucumber-report.html
+
 # CI - CD
 - clone repo
 - ./gradlew test
 - save report
+- 
+# dependencies
+    cucumber-java:6.10.4'
+    cucumber-junit:6.10.4'
+    cucumber-picocontainer:6.10.4'
+    selenium-java:3.141.59'
+    javafaker:0.15'
+    bonigarcia:webdrivermanager:5.0.3"
 
 # external lib
 - gson from google
@@ -37,4 +55,4 @@
 
 # parallel execution
 - in gradle, maxParallelForks = 2
-- threadCount/fork - maven surefire plugin
+- threadCount/fork - maven surefire plugin(for maven build)
