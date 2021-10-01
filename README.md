@@ -7,8 +7,8 @@
 # How to run test
 - JDK 11
 - Latest Intellij IDEA
+- go to github url, After cloning, open cucumber folder in intellij
 - execute "./gradlew test" command
-- After cloning, open cucumber folder in intellij
 
 # How to View Report
 View go to this directory
