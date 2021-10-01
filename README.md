@@ -1,7 +1,6 @@
 # How to run test
 - JDK 11
 - Latest Intellij IDEA
-- Chrome 94 driver is bundled
 - execute "./gradlew test" command
 - After cloning, open cucumber folder in intellij
 
