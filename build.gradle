@@ -4,10 +4,15 @@ dependencies {
     testImplementation 'io.cucumber:cucumber-java:6.10.4'
     testImplementation 'io.cucumber:cucumber-junit:6.10.4'
     testImplementation 'io.cucumber:cucumber-picocontainer:6.10.4'
-    implementation 'org.seleniumhq.selenium:selenium-java:2.41.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
     implementation 'com.github.javafaker:javafaker:0.15'
+    testImplementation("io.github.bonigarcia:webdrivermanager:5.0.3")
 
 
+}
+
+test{
+    systemProperty("cucumber.options",System.getProperty("cucumber.options"))
 }
 
 repositories {

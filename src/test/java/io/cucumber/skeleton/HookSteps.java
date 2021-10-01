@@ -5,7 +5,7 @@ import io.cucumber.java.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import io.github.bonigarcia.wdm.WebDriverManager;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -16,12 +16,12 @@ public class HookSteps {
     public HookSteps(TestContext context){
         this.context = context;
     }
-
     //open browser before each scenario
     @Before
     public void startBrowser(){
-        System.setProperty("webdriver.chrome.driver",
-                "target/test-classes/chromedriver94");
+        WebDriverManager.chromedriver().setup();
+
+        // System.setProperty("webdriver.chrome.driver","target/test-classes/chromedriver94");
         //driver = new RemoteWebDriver(new url(""))
         context.driver = new ChromeDriver();
         context.driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
