@@ -12,7 +12,7 @@
 
 # How to View Report
 View go to this directory
-target/cucumber-report.html
+"target/cucumber-report.html"
 
 # CI - CD
 - clone repo
