@@ -12,7 +12,7 @@ View go to this directory
 - clone repo
 - ./gradlew test
 - save report
-- 
+
 # dependencies
     cucumber-java:6.10.4'
     cucumber-junit:6.10.4'
