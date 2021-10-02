@@ -1,5 +1,10 @@
+# Used Mac operating system
+# Build tool Gradle
+# intellij idea community edition (IDE) open-source
+# Install Software open-source 
+# JDK 11
+
 # How to run test
-- MAC OS
 - JDK 11
 - Latest Intellij IDEA
 - go to github url, After cloning, open cucumber folder in intellij

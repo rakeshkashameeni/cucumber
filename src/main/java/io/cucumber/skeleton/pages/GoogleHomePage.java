@@ -1,5 +1,6 @@
 package io.cucumber.skeleton.pages;
 
+import io.cucumber.skeleton.ConfigManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -11,13 +12,13 @@ public class GoogleHomePage extends BasePage {
     }
 
 
-    By inputElement = By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input");
+    By inputElement = By.xpath("//input[@title='Search']");
     By searchButton = By.xpath("//input[@value='Google Search']");
 
 
     public GoogleResultsPage searchSecurePay() {
         //System.getProperty("website")
-        driver.get("https://www.google.com.au");
+        driver.get(ConfigManager.getProp("url"));
         driver.findElement(inputElement).sendKeys("secure pay");
         driver.findElement(searchButton).click();
         return new GoogleResultsPage(driver);

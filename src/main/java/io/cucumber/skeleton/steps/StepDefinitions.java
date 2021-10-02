@@ -1,4 +1,4 @@
-package io.cucumber.skeleton;
+package io.cucumber.skeleton.steps;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -7,6 +7,7 @@ import io.cucumber.java.en.When;
 import io.cucumber.skeleton.pages.*;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
+
 
 public class StepDefinitions  {
     WebDriver driver;

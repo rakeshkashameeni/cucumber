@@ -1,6 +1,5 @@
 package io.cucumber.pages;
 
-import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 
