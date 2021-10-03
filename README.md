@@ -4,6 +4,7 @@
 - go to github url, After cloning, open cucumber folder in intellij
 - Execute below command to run tests
 - gradlew clean test --tests "io.cucumber.skeleton.RunCucumberTest"
+- ./gradlew clean test --tests "io.cucumber.skeleton.RunCucumberTest"
 
 # How to View Report
 View go to this directory
